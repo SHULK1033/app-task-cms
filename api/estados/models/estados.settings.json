@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estados",
+  "info": {
+    "name": "estados"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tipoEstado": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tarea": {
+      "via": "estado",
+      "model": "tareas"
+    }
+  }
+}

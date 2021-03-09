@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tareas",
+  "info": {
+    "name": "tareas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "responsable": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "tareas",
+      "dominant": true
+    },
+    "estimado": {
+      "type": "biginteger"
+    },
+    "estado": {
+      "model": "estados",
+      "via": "tarea"
+    }
+  }
+}
