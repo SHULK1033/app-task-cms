@@ -16,9 +16,8 @@
     },
     "responsable": {
       "plugin": "users-permissions",
-      "collection": "user",
-      "via": "tareas",
-      "dominant": true
+      "model": "user",
+      "via": "tareas"
     },
     "estimado": {
       "type": "biginteger"
