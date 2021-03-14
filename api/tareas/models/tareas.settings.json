@@ -25,6 +25,10 @@
     "estado": {
       "model": "estados",
       "via": "tarea"
+    },
+    "prioridad": {
+      "via": "tareas",
+      "model": "prioridad"
     }
   }
 }

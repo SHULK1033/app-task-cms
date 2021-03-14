@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prioridads",
+  "info": {
+    "name": "Prioridad"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Descripcion": {
+      "type": "string"
+    },
+    "Prioridad": {
+      "type": "string"
+    },
+    "tareas": {
+      "collection": "tareas",
+      "via": "prioridad"
+    }
+  }
+}
