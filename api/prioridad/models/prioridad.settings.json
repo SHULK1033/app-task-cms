@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "prioridads",
+  "collectionName": "prioridad",
   "info": {
-    "name": "Prioridad"
+    "name": "Prioridad",
+    "description": ""
   },
   "options": {
     "increments": true,
